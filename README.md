@@ -34,3 +34,10 @@
 
 - 라우트 핸들러 이전에 호출되는 함수
 - nest g middleware logger(이름)
+
+#### filter & pipe
+
+- throw new HttpException ('에러메세지', 'status')
+- 만약 이셉션 처리가 하나로 모여서 재사용성을 고려해 필터링을 거쳐 리스폰스로 반환해주는 형식으로 만들수 있음.
+
+- middleware => controller => Service => Exception
